@@ -3,17 +3,11 @@
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="about.html">About</a>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-    </li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-   
-  </ol>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact us</a></li>
+  </ul>
 </details>
 
 
