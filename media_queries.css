@@ -1,0 +1,32 @@
+@media screen and (max-width: 790px){
+    @keyframes ani_slide {
+        0%{
+            transform: translateY(0vh);
+        }
+        100%{
+            transform: translateY(-30vh);
+        }
+    }
+    header{
+        height: 30vh;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .btn{
+        position: relative;
+        float: right;
+    }
+    .search{
+        margin-top: 5px;
+    }
+    .slider{
+        height: 30vh;
+    }
+    .slider .slide1{
+        transform:translateY(0vh);
+        animation: ani_slide 14s ease-in-out 2s infinite ;
+    }
+}
