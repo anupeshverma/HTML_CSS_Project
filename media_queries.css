@@ -1,32 +1,207 @@
-@media screen and (max-width: 1090px){
-    @keyframes ani_slide {
-        0%{
-            transform: translateY(0vh);
-        }
-        100%{
-            transform: translateY(-30vh);
-        }
-    }
-    header{
-        height: 30vh;
-    }
-    nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .btn{
-        position: relative;
-        float: right;
-    }
-    .search{
-        margin-top: 5px;
-    }
-    .slider{
-        height: 30vh;
-    }
-    .slider .slide1{
-        transform:translateY(0vh);
-        animation: ani_slide 14s ease-in-out 2s infinite ;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Sacramento&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Sacramento&family=Volkhov:ital,wght@1,700&display=swap');
+
+:root{
+    --main_color: #2874f0
+}
+.txt-center{
+    text-align: center;
+}
+.box_head{
+    font-family: courgette;
+    font-size: 1.7vw;
+    padding: 3px 9px;
+}
+.txthover:hover{
+    font-weight: bold;
+}
+.font2{
+    font-family: 'Sacramento', cursive;
+}
+.card_item_txt{
+    color: orange;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.loading{
+    height: 2px;
+    background-color:var(--main_color);
+    animation: loading 2s 0s 1 ;
+    animation-timing-function: ease-in-out;
+}
+header{
+    background-color: var(--main_color);
+    height: 15vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.logo img{
+    width: 88px;
+    /* margin:; */
+}
+nav ul{
+    display: flex;
+    margin: 0px 3vw;
+}
+nav ul li{
+    list-style: none;
+    margin: 0px 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+
+}
+.search input{
+    width: 40vw;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+.btn{
+    display: flex;
+    margin: 0px 0px 0px 4vw;
+    position: relative;
+    float:right;
+}
+.btn button{
+    margin: 0px 5px;
+    background-color: var(--main_color);
+    color: white;
+    border: none;
+   
+}
+.btn button:hover{
+    margin: 0px 5px;
+    background-color: var(--main_color);
+    color: orange;
+    border: none;
+   
+}
+                             /* Main */
+main{
+    min-height: calc(100vh - 10vh - 10vh);
+}
+
+.slider{
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    overflow: hidden;
+
+}
+.slider img{
+    
+    width: 100vw;    
+}
+.slider .slide1{
+    transform:translateY(0vh);
+    animation: ani_slide1 14s ease-in-out 2s infinite ;
+}
+.box{
+    height: vw;
+    margin: 10px 5vw;
+    background-color: papayawhip;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.box button{
+    position: relative;
+    float: right;
+    font-size: 1vw;
+    background-color: var(--main_color);
+    color: white;
+    padding: 2px 4px;
+}
+
+.box .card{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+   
+}
+.box img{
+    width: 10vw;
+    height:10vw;
+}
+.box img:hover{
+    width: 10.15vw;
+    height:10.15vw;
+}
+.card_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2vw;
+    width: 10vw;
+    margin: 10px 1.2vw;
+}
+                            /* Footer */
+footer{
+    height: 10vh;
+    background-color: var(--main_color);
+}      
+.columns{
+    position: relative;
+    display: Grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+}  
+.col{
+    display: flex;
+    flex-direction: column;
+    margin: 2px 3vw 2vh 2px;
+    font-size: 1.5vw;
+}   
+.col h4{
+    font-family: 'Volkhov', serif;
+    margin-bottom: 8px;
+    font-size: 2vw;
+}       
+.cpright{
+    font-size: 2vw;
+}          
+
+                                    /* Contact */
+.left_card{
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.right_card{
+    margin: 15px 0px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.icon{
+    margin: 0px 10px;
+}
+.card_img{
+    width: 30vw;
+    border-radius: 15px;
 }
