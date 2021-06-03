@@ -100,7 +100,7 @@ nav ul li a:hover{
 }
                              /* Main */
 main{
-    min-height: calc(100vh - 15vh - 28vh);
+    min-height: calc(100vh - 10vh - 10vh);
 }
 
 .slider{
@@ -161,7 +161,7 @@ main{
 }
                             /* Footer */
 footer{
-    height: 20vw;
+    height: 10vh;
     background-color: var(--main_color);
 }      
 .columns{
