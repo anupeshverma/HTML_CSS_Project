@@ -1,4 +1,4 @@
-@media screen and (max-width: 790px){
+@media screen and (max-width: 1090px){
     @keyframes ani_slide {
         0%{
             transform: translateY(0vh);
@@ -8,7 +8,7 @@
         }
     }
     header{
-        height: 30vh;
+        height: 9vh;
     }
     nav{
         display: flex;
@@ -23,7 +23,7 @@
         margin-top: 5px;
     }
     .slider{
-        height: 30vh;
+        height: 10vh;
     }
     .slider .slide1{
         transform:translateY(0vh);
