@@ -161,7 +161,7 @@ main{
 }
                             /* Footer */
 footer{
-    height: 10vh;
+    height: 50vh;
     background-color: var(--main_color);
 }      
 .columns{
